@@ -57,7 +57,7 @@ else if (isDeleting && updatedText === ""){
               tempora dolorem quisquam tempore officiis at blanditiis ut fuga
               omnis vero consequuntur. Nihil!
             </p>
-            <button onClick={console.log("connect")}>Lets Connect <ArrowRightCircle size={25}></ArrowRightCircle></button>
+            <button onClick={()=>console.log("connecyyt")}>Lets Connect <ArrowRightCircle size={25}></ArrowRightCircle></button>
 
           </Col>
           <Col xs={12} md={6} xl={5}>
