@@ -1,6 +1,7 @@
 import NavBar from "./components/Navbar";
 import {Banner} from "./components/Banner"
 import {Skills} from "./components/Skills"
+import {Projects} from "./components/Projects"
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <NavBar/>
       <Banner/>
       <Skills/>
+      <Projects/>
       {/* <Skills/> */}
     </div>
   );
