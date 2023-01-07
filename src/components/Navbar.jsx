@@ -7,19 +7,21 @@ import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 import "../App.css";
 
-// functional component convention is camelcase
+// functional component convention is Pascalcase
 const NavBar = () => {
 
-  // to know where we are in the site.
+  
   const [activeLink, setActiveLink]= useState("home");
 
   // to detect if user has scrolled
   const [scrolled, setScrolled] = useState("false");
 
-
+// to active the nav-link when clicked
   const onUpdateActiveLink  = (value)=>{
 setActiveLink(value);
   }
+
+
 useEffect(() => {
   const onScroll = ()=>{
     if(window.scrollY>50){
@@ -29,6 +31,8 @@ useEffect(() => {
       setScrolled(false);
     }
   }
+
+  // to listen the scroll event
 window.addEventListener("scroll", onScroll);
 return () => {
     window.removeEventListener("scroll", onScroll);
@@ -37,6 +41,7 @@ return () => {
 }, [])
 
   return (
+    // To change the stylings of navbar when it is scrolled 50 offset from top
     <Navbar expand="lg" className={scrolled?"scrolled":""}>
       <Container>
         <Navbar.Brand href="#home">
@@ -53,9 +58,9 @@ return () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-                {/* <a href="#" src={navIcon1} alt=""></a>
-                <a href="#" src={navIcon2} alt=""></a> */}
-                <img href="#" src={navIcon3} alt=""/>
+                <a href="#"><img href="#" src={navIcon1} alt=""/></a>
+                <a href="#"><img href="#" src={navIcon2} alt=""/></a>
+                <a href="#"><img href="#" src={navIcon3} alt=""/></a>
             </div>
             <button className="connect text-capitalize" onClick={()=>{console.log(1)}}>lets connect</button>
           </span>
