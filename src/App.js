@@ -1,7 +1,8 @@
 import NavBar from "./components/Navbar";
 import {Banner} from "./components/Banner"
 import {Skills} from "./components/Skills"
-import {Projects} from "./components/Projects"
+import {Projects} from "./components/Projects";
+import {Contact} from "./components/Contact";
 
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
       <Banner/>
       <Skills/>
       <Projects/>
-      {/* <Skills/> */}
+      <Contact/>
     </div>
   );
 }

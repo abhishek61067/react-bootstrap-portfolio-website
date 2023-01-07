@@ -49,6 +49,14 @@ p, a, li, button, ul {
   text-decoration: none;
 }
 
+.react-multiple-carousel__arrow--left {
+    left: calc(4% + -34px) !important;
+}
+
+.react-multiple-carousel__arrow--right {
+    right: calc(4% + -34px) !important;
+}
+
 
 
 a:hover {
@@ -517,6 +525,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 0;
   position: relative;
   transition: 0.3s ease-in-out;
+  width:200px;
 }
 .contact form button span {
   z-index: 1;
