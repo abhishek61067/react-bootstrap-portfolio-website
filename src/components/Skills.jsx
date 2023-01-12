@@ -4,7 +4,9 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import meter1 from "../assets/img/meter1.svg"
 import meter2 from "../assets/img/meter2.svg"
-import ColorSharp from "../assets/img/color-sharp.png"
+import ColorSharp from "../assets/img/color-sharp.png";
+import React from "react";
+
 
 export const Skills = ()=>{
 

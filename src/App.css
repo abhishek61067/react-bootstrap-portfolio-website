@@ -92,6 +92,11 @@ p.danger {
 	color: red;
 }
 /************ Navbar Css ************/
+
+.connect .text-capitalize
+{height:20px;
+}
+
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -163,10 +168,11 @@ span.navbar-text {
 .navbar-text button {
   font-weight: 700;
   color: #fff;
-  border: 1px solid #fff;
-  padding: 18px 34px;
+  padding: 5px 16px;
+  /* border-radius:10px; */
   font-size: 18px;
   margin-left: 18px;
+  border:1px solid white;
 	position: relative;
 	background-color: transparent;
 	transition: 0.3s ease-in-out;
@@ -254,10 +260,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   padding: 8px 10px;
   background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
+      border-radius: 0 20px;
+
 }
 .banner h1 {
   font-size: 65px;
@@ -549,9 +556,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
 }
 
+button[type="submit"]{
+  border-radius:1rem !important;
+}
+
 /************ Footer Css ************/
 .footer {
-  padding: 0 0 50px 0;
+  padding: 0 0 0px 0;
   background-image: url('./assets/img/footer-bg.png');
   background-position: center center;
   background-size: cover;

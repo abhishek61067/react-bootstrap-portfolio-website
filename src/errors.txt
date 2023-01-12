@@ -1,0 +1,8 @@
+1. 'AccordionCollapseProps' is not exported from './AccordionCollapse'.
+sol: https://github.com/react-bootstrap/react-bootstrap/issues/5267 
+(delete the node modules or npm uninstall react-bootstrap bootstrap and again installing react-bootstrap@1.0.1 bootstrap).
+
+
+2. TypeError: Cannot read property 'handle' of undefined --- if (fn.handle && fn.set) mount_app = fn
+
+sol: 
