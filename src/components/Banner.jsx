@@ -1,8 +1,16 @@
+
 import {useState, useEffect} from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import {ArrowRightCircle} from "react-bootstrap-icons";
 import headerImg from "../assets/img/header-img.svg";
+import React from "react";
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
+import { isVisible } from "@testing-library/user-event/dist/utils/misc/isVisible";
 
+
+
+// import 'animate.css';
 
 export const Banner = () => {
     const [loopNum, setLoopNum] =   useState(0);
@@ -47,6 +55,14 @@ else if (isDeleting && updatedText === ""){
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
+            <TrackVisibility>
+            {
+
+              ({isVisible}) =>
+
+            
+              <div className={ isVisible? "animate__animated animate__lightSpeedInLeft":"" }>
+
             <span className="tagline">Welcome to my portfolio</span>
             <h1>
               {`Hi i am a`} <span class="wrap">{text}</span>
@@ -58,10 +74,25 @@ else if (isDeleting && updatedText === ""){
               omnis vero consequuntur. Nihil!
             </p>
             <button onClick={()=>console.log("connecyyt")}>Lets Connect <ArrowRightCircle size={25}></ArrowRightCircle></button>
+            </div>
+            }
+          
+            </TrackVisibility>
 
           </Col>
           <Col xs={12} md={6} xl={5}>
+            <TrackVisibility>
+            {
+
+              ({isVisible}) =>
+
+            
+              <div className={ isVisible? "animate__animated animate__fadeInRight":"" }>
+
           <img src={headerImg} alt="header img" />
+          </div>
+            }
+            </TrackVisibility>
           </Col>
         </Row>
       </Container>

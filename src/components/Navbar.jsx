@@ -1,3 +1,4 @@
+import React from "react";
 import {Navbar, Container, Nav} from "react-bootstrap";  
 import { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -58,15 +59,16 @@ return () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-                <a href="#"><img href="#" src={navIcon1} alt=""/></a>
-                <a href="#"><img href="#" src={navIcon2} alt=""/></a>
-                <a href="#"><img href="#" src={navIcon3} alt=""/></a>
+                <a href="https://www.linkedin.com/in/abhishek-bhattarai/"><img href="#" src={navIcon1} alt=""/></a>
+                <a href="https://www.facebook.com/abhishek.bhattarai.21067/"><img href="#" src={navIcon2} alt=""/></a>
+                {/* <a href="#"><img href="#" src={navIcon3} alt=""/></a> */}
             </div>
             <button className="connect text-capitalize" onClick={()=>{console.log(1)}}>lets connect</button>
           </span>
         </Navbar.Collapse>
       </Container>
     </Navbar>
+
   );
 };
 
